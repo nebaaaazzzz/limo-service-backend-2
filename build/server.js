@@ -41,7 +41,7 @@ app.use(_express.default.json());
 app.use((0, _cors.default)({
     credentials: true,
     origin: [
-        "https://limo-service-admin-react.vercel.app",
+        "https://limo-service-admin-react-no1y.vercel.app",
         "https://limo-services.vercel.app"
     ]
 }));
