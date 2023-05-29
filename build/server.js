@@ -20,7 +20,7 @@ function _interop_require_default(obj) {
 const PORT = process.env.PORT || 3030;
 (async ()=>{
     try {
-        await _db.User.upsert({
+        await _db.User.create({
                data :{
                 email: "neba@gmail.com",
                 lastName: "Daniel",
