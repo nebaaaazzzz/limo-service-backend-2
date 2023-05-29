@@ -37,7 +37,7 @@ app.use(
     credentials: true,
     origin: [
       "https://limo-service-admin-react-no1y.vercel.app",
-      "https://limo-services.vercel.app",
+      "https://abc-limo-5ud36wm8i-yosef781227.vercel.app/",
     ],
   })
 );
