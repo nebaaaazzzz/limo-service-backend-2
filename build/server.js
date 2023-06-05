@@ -21,15 +21,13 @@ const PORT = process.env.PORT || 3030;
 (async ()=>{
     try {
         await _db.User.create({
-               data :{
+            data: {
                 email: "neba@gmail.com",
                 lastName: "Daniel",
                 firstName: "Nebiyu",
                 // password: "123456",
                 password: "$2a$10$Bl4Y5US/Gh2bOn6GchivH.GUjKcbEp.h9q8gHaEenpoJ1GMDgLlmi"
-               }
-               
-            
+            }
         });
     } catch (e) {
         console.log(e.message);
