@@ -17,7 +17,7 @@ export async function sendMail(body: {
   });
   await transporter.sendMail({
     from: process.env.EMAIL, // sender address
-    to: process.env.TO_MAIL, // list of receivers
+    to: process.env.TO_EMAIL, // list of receivers
     subject: "Contact information", // Subject line
     text: "Hello world?", // plain text body
     html: `

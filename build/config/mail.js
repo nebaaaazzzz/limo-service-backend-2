@@ -26,7 +26,7 @@ async function sendMail(body) {
     });
     await transporter.sendMail({
         from: process.env.EMAIL,
-        to: process.env.TO_MAIL,
+        to: process.env.TO_EMAIL,
         subject: "Contact information",
         text: "Hello world?",
         html: `
