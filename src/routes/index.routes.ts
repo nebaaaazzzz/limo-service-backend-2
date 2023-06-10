@@ -16,8 +16,8 @@ router.use("/book", bookRouter);
 router.use("/user", catchAsync(isAuth), userRouter);
 router.use("/vehicle", vehicleRouter);
 router.post("/mail", async (req, res) => {
-  const { to, name, email, phone, message } = req.body;
-  await sendMail(to, {
+  const { name, email, phone, message } = req.body;
+  await sendMail({
     name,
     email,
     phone,
