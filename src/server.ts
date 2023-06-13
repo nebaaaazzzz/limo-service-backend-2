@@ -36,7 +36,7 @@ app.use(
   cors({
     credentials: true,
     origin: [
-      "https://limo-service-admin-react-no1y.vercel.app",
+      "https://limo-admin-2.onrender.com",
       "https://abc-limo.onrender.com",
     ],
   })
