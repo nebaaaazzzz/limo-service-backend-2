@@ -39,7 +39,7 @@ app.use(_express.default.json());
 app.use((0, _cors.default)({
     credentials: true,
     origin: [
-        "https://limo-service-admin-react-no1y.vercel.app",
+        "https://limo-admin-2.onrender.com",
         "https://abc-limo.onrender.com"
     ]
 }));
