@@ -29,7 +29,8 @@ const PORT = process.env.PORT || 3030;
 })();
 const app = express();
 app.use(express.json());
-app.use("/", express.static(path.join(__dirname, "static")));
+app.use(express.static(path.join(__dirname, "static")));
+app.use(express.static(path.join(__dirname, "uploads")));
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/static/index.html"));
 });

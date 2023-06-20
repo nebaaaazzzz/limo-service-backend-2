@@ -35,7 +35,8 @@ const PORT = process.env.PORT || 3030;
 })();
 const app = (0, _express.default)();
 app.use(_express.default.json());
-app.use("/", _express.default.static(_path.default.join(__dirname, "static")));
+app.use(_express.default.static(_path.default.join(__dirname, "static")));
+app.use(_express.default.static(_path.default.join(__dirname, "uploads")));
 app.get("/", function(req, res) {
     res.sendFile(_path.default.join(__dirname + "/static/index.html"));
 });
