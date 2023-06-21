@@ -68,7 +68,7 @@ const postBlog = [
 ];
 const getBlogs = (0, _error.catchAsync)(async (req, res, next)=>{
     const page = Number(req.query?.page) || 1;
-    const PAGE_SIZE = 3;
+    const PAGE_SIZE = 6;
     const limit = Number(req.query?.limit) || PAGE_SIZE;
     const results = await _db.Blog.findMany({
         skip: (page - 1) * limit,
