@@ -44,7 +44,7 @@ export const postVehicle = [
 export const getVehicles = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const page = Number(req.query?.page) || 1;
-    const PAGE_SIZE = 3;
+    const PAGE_SIZE = 6;
     const limit = Number(req.query?.limit) || PAGE_SIZE;
     const results = await Vehicle.findMany({
       skip: (page - 1) * limit,
